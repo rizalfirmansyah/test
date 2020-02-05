@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/node_modules/react-native/React/Base/RCTJavaScriptLoader.mm \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Target\ Support\ Files/React-Core/React-Core-prefix.pch \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTDefines.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTPackagerConnection.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-cxxreact/cxxreact/JSBundleType.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/Portability.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/CPortability.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTBridgeDelegate.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTBridgeModule.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTFrameUpdate.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTInvalidating.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTAnimationType.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTBorderStyle.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTLog.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTAssert.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTUtils.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTPointerEvents.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/node_modules/react-native/React/Base/RCTMultipartDataTask.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Private/React-Core/React/RCTMultipartStreamReader.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/node_modules/react-native/React/Base/RCTUtils.h

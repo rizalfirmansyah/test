@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.mm \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Target\ Support\ Files/RCTTypeSafety/RCTTypeSafety-prefix.pch \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/node_modules/react-native/Libraries/TypeSafety/RCTConvertHelpers.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyVector.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyIterator.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/Optional.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/Portability.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/CPortability.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/Traits.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/Utility.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/lang/Exception.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Folly/folly/CppAttributes.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
+  /Users/jouska2/Documents/Rizal/aplikasi-belajar/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h
