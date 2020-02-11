@@ -23,18 +23,16 @@ export default class App extends Component {
           source={{uri: 'https://i.pinimg.com/236x/02/c4/7f/02c47fb765758bcf1782f95f32823662.jpg'}}
         />
 
-        <Text style={{fontSize:30, color:'white', left:5}}>WenAkte</Text>
-        <Text style={{fontSize:25, color:'white', left:5}}>ClientView</Text>
+        <Text style={{fontSize:30, color:'white'}}>AMA Coffee Shop</Text>
+        <Text style={{fontSize:25, color:'white'}}>since 2022</Text>
         </View>
 
-        <View style={{width: 395, height: 500}}>
-          <Text style={styles.white}></Text>
-        </View>
+        
         <Button View
       title="Let's Go"
       type ='outline'
       color='grey' />
-      <View style={{width: 395, height: 50, left:5}}>
+      <View style={{width: 395, height: 50}}>
       <Text style={styles.white}>Imprint . Privacy</Text>
         </View>
       </View>
