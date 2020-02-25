@@ -1,45 +1,51 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View, ImageBackground, Button } from 'react-native';
-import {Image } from 'react-native';
+import React from 'react';
+import { createStackNavigator } from 'react-navigation'; // Version can be specified in package.json
+import LoginScreen from './Screens/login'
+import GainScreen from './Screens/gain'
+import EnterScreen from './Screens/enter'
+import DrawerNavigator from './Screens/drawers'
+import KasusScreen from './Screens/kasus'
 
-const styles = StyleSheet.create({
-  white:{
-    color:'white',
-    fontSize: 15,
+// class HomeScreen extends React.Component {
+//   render() {
+//     return (
+//       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+//         <Text>Home Screen</Text>
+//         <Button
+//           title="Go to Details"
+//           onPress={() => this.props.navigation.navigate('Details')}
+//         />
+//       </View>
+//     );
+//   }
+// }
+
+// class DetailsScreen extends React.Component {
+//   render() {
+//     return (
+//       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+//         <Text>Details Screen</Text>
+//       </View>
+//     );
+//   }
+// }
+
+const RootStack = createStackNavigator(
+  {
+    LoginScreen: LoginScreen,
+    GainScreen: GainScreen,
+    EnterScreen: EnterScreen,
+    DrawerNavigator: DrawerNavigator,
+    KasusScreen: KasusScreen,
   },
-});
-export default class App extends Component {
+  {
+    initialRouteName: 'LoginScreen',
+
+  }
+);
+
+export default class App extends React.Component {
   render() {
-    return (
-     <View>
-        <ImageBackground
-          style={{width: 400, height: 1000, flex: 1}}
-          source={{uri: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?cs=srgb&dl=close-up-of-coffee-cup-on-table-312418.jpg&fm=jpg'}}/> 
-        <View>
-          <View style={{flexDirection: 'row'}}/>
-
-        <Image
-          style={{width: 40, height: 25 }}
-          source={{uri: 'https://i.pinimg.com/236x/02/c4/7f/02c47fb765758bcf1782f95f32823662.jpg'}}
-        />
-
-        <Text style={{fontSize:30, color:'white', left:5}}>WenAkte</Text>
-        <Text style={{fontSize:25, color:'white', left:5}}>ClientView</Text>
-        </View>
-
-        <View style={{width: 395, height: 500}}>
-          <Text style={styles.white}></Text>
-        </View>
-        <Button View
-      title="Let's Go"
-      type ='outline'
-      color='grey' />
-      <View style={{width: 395, height: 50, left:5}}>
-      <Text style={styles.white}>Imprint . Privacy</Text>
-        </View>
-      </View>
-      
-
-    );
+    return <RootStack />;
   }
 }
