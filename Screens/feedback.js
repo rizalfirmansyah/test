@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import { Container, Header, Content, Icon, Accordion, Text, View , StyleSheet} from "native-base";
-import Contact from './contact';
-import ContactForm from './contactForm'
-import TeamViewer from './teamviewer';
-import { TouchableOpacity } from "react-native";
-
+import { Container, Header, Content, Accordion } from "native-base";
+import Icon from 'react-native-ionicons';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 
 const dataArray = [
   { title: "First Element", content: "Lorem ipsum dolor sit amet" },
@@ -12,99 +9,42 @@ const dataArray = [
   { title: "Third Element", content: "Lorem ipsum dolor sit amet" }
 ];
 
+const styles = StyleSheet.create({
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    justifyContent: 'space-between',
+  },
 
+  white:{
+    color:'black',
+    fontSize: 20,
+    flex: 1,
+  },
 
-export default class AccordionCustomHeaderContent extends Component {
-
-  constructor(props){
-    super(props)
-    this.state = {
-      ContactFormState: false,
-      ContactState: false,
-      TeamViewerState: false
-     
-    }
-  }
-
-  select = (item) => {
-    if(this.state.ContactFormState == false){
-      this.setState({ ContactFormState: true })
-    }
-    if(this.state.ContactFormState == true){
-      this.setState({ ContactFormState: false })
-    }
-    
-   
-  }
-
-  select1 = (item) => {
-    if(this.state.ContactState == false){
-      this.setState({ ContactState: true })
-    }
-    if(this.state.ContactState == true){
-      this.setState({ ContactState: false })
-    }
-    
-   
-  }
-
-  select2 = (item) => {
-    if(this.state.TeamViewerState == false){
-      this.setState({ TeamViewerState: true })
-    }
-    if(this.state.TeamViewerState == true){
-      this.setState({ TeamViewerState: false })
-    }
-    
-   
-  }
-  
-
-
-  ContactFormView = () => {
-    if(this.state.ContactFormState == true){
-      return <ContactForm />
-    }
-    
-  }
-  ContactView = () => {
-    if(this.state.ContactState == true){
-      return <Contact />
-    }
-    
-  }
-TeamViewerView = () =>
-{
-  if(this.state.TeamViewerState == true){
-    return <TeamViewer />
-  }
-}
-
- 
+});
+export default class AccordionExample extends Component {
   render() {
     return (
       <Container>
-        <Header />
-        <Content padder style={{ backgroundColor: "white" }}>
-        
-          <TouchableOpacity onPress={this.select.bind(this)}>
-              <Text>Contact form </Text>
-            
-            
-          </TouchableOpacity>
-          {this.ContactFormView()}
-          <TouchableOpacity onPress={this.select1.bind(this)}>
-            <Text> Contact</Text>
-           
-          </TouchableOpacity>
-          {this.ContactView()}
-          <TouchableOpacity onPress={this.select2.bind(this)}> 
-            <Text>TeamViewer</Text>
-          </TouchableOpacity>
-          {this.TeamViewerView()}
+        <Header style={styles.header}>
+        <TouchableOpacity
+        onPress={this.props.navigation.openDrawer}>
+        <Icon name="ios-menu" size={25} color="#333333"  />
+      </TouchableOpacity>
+    
+      <Text style={styles.white}>Technical Support</Text>
+
+      <TouchableOpacity>
+        <Text><Icon name="information-circle-outline" size={25} /></Text>
+      </TouchableOpacity>
+       </Header>
+
+        <Content padder>
+          <Accordion dataArray={dataArray} expanded={0}/>
         </Content>
       </Container>
     );
   }
 }
-

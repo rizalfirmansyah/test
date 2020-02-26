@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     borderRadius: 3,
     marginVertical: 7,
     paddingVertical: 12,
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   buttonnText:{
     fontSize: 15,

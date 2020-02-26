@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ImageBackground, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import {Image } from 'react-native';
+import Icon from 'react-native-ionicons';
+import {Container, Header} from 'native-base';
 
   const styles = StyleSheet.create({
     black:{
@@ -19,7 +21,19 @@ import {Image } from 'react-native';
       margin: 10,
       flexDirection: 'row',
       justifyContent: 'space-between'
-    }
+    },
+      header: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        justifyContent: 'space-between',
+      },
+    
+      white:{
+        color:'black',
+        fontSize: 20,
+        flex: 1,
+      },
   });
 
 
@@ -30,6 +44,20 @@ import {Image } from 'react-native';
   
     render() {
       return (
+        <Container>
+          <Header style={styles.header}>
+        <TouchableOpacity
+        onPress={this.props.navigation.openDrawer}>
+        <Icon name="ios-menu" size={25} color="#333333"  />
+      </TouchableOpacity>
+    
+      <Text style={styles.white}>User settings</Text>
+
+      <TouchableOpacity>
+        <Text><Icon name="information-circle-outline" size={25} /></Text>
+      </TouchableOpacity>
+       </Header>
+
         <View style={{ flex: 1, backgroundColor: 'white', flexDirection: 'column', left: 5 }}>
         <Text style={styles.grey}>User settings</Text>
           <View style={{width: 395, height: 150}}>
@@ -59,6 +87,7 @@ import {Image } from 'react-native';
         </View>
         
       </View>
+      </Container>
     )};
       
   }

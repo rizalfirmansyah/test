@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {AppRegistry, TextInput, StyleSheet, Text, View} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 import { Button } from 'react-native-elements';
 
 export default class ContactForm extends Component {
@@ -21,37 +20,38 @@ export default class ContactForm extends Component {
   render() {
     return (
       <View>
-        <Text>subject</Text>
+        <Text>Subject</Text>
       <TextInput
         style={styles.input}
         onChangeText={text => this.setState({text})}
         placeholder='e.q."My Suppor request"'
         value={this.state.text}
         underlineColorAndroid="transparent"
-        onChangeText={this.subject}
-      />
-      <Text> your requst </Text>
+        onChangeText={this.subject}/>
+
+      <Text> Your requst </Text>
+
       <TextInput 
         style={styles.input2}
         onChangeText={text => this.setState({text})}
         placeholder='enter your concern here'
         value={this.state.text}
         underlineColorAndroid="transparent"
-        onChangeText={this.request}
-      />
-     <View>
-     <Button
-  title="Send"
-  type="outline"
-/>
+        onChangeText={this.request}/>
 
-     </View>
+     <View style={styles.container}>
+          <View style={styles.alternativeLayoutButtonContainer}>
+            <Button
+              onPress={this._onPressButton}
+              title="Send"
+              type ='outline'
+              color="grey"/>
+          </View>
+        </View>
       </View>
     );
   }
 }
-
-AppRegistry.registerComponent('aplikasi-belajar', () => ContactForm);
 
 const styles = StyleSheet.create({
   container: {
@@ -60,26 +60,29 @@ const styles = StyleSheet.create({
   input: {
     margin: 15,
     height: 40,
-    borderColor: '#7a42f4',
+    borderColor: 'grey',
     borderWidth: 1,
   },
   input2: {
     margin: 15,
     height: 100,
-    borderColor: '#7a42f4',
+    borderColor: 'grey',
     borderWidth: 1,
   },
-  submitButton: {
-    backgroundColor: 'white',
-    padding: 10,
-    margin: 15,
-    height: 40,
-  },
+
   title: {
     textAlign: 'center',
     marginVertical: 8,
   },
-  submitButtonText: {
-    color: 'white',
+  alternativeLayoutButtonContainer: {
+    margin: 18,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    color: 'grey',
+    
+    
+    
+    
+    
   },
 });
