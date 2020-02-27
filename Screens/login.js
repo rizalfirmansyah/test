@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  Image,
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
-
+import {AppRegistry, Image, View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   white:{
@@ -39,22 +31,21 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: 'white',
     textAlign: 'center',
-
   }
 });
+
 export default class App extends Component {
   onNavigate = () =>{
     this.props.navigation.navigate('GainScreen')
-}
-  render() {
+  }
 
+  render() {
     return (
       <View
         style={{
           flex: 1,
+        }}>
 
-        }}
-      >
         <View
           style={{
             position: 'absolute',
@@ -62,16 +53,15 @@ export default class App extends Component {
             left: 0,
             width: '100%',
             height: '100%',
-          }}
-        >
+          }}>
+
           <Image
             style={{
               flex: 1,
-             
             }}
-            source={{ uri: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?cs=srgb&dl=close-up-of-coffee-cup-on-table-312418.jpg&fm=jpg' }}
-          />
+            source={{ uri: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?cs=srgb&dl=close-up-of-coffee-cup-on-table-312418.jpg&fm=jpg' }}/>
         </View>
+
         <Image
           style={{width: 30, height: 20 }}
           source={{uri: 'https://i.pinimg.com/236x/02/c4/7f/02c47fb765758bcf1782f95f32823662.jpg'}}></Image>
@@ -82,17 +72,15 @@ export default class App extends Component {
             flex: 1,
             backgroundColor: 'transparent',
             justifyContent: 'flex-end',
-          }}
-          
-        >
-          <TouchableOpacity style={styles.button} onPress={this.onNavigate.bind(this)}>
+          }}>
+            
+        <TouchableOpacity style={styles.button} onPress={this.onNavigate.bind(this)}>
           <Text style ={styles.buttonText}>Let's Go</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.buttonn}>
           <Text style ={styles.buttonnText}>Imprint.Privacy.</Text>
         </TouchableOpacity>
-
         </View>
       </View>
     );

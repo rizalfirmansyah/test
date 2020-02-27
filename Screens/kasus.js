@@ -1,18 +1,20 @@
-import React, {Component} from 'react';
-import {Container, Header, Content, Tab, Tabs, View,Drawer} from 'native-base';
-import Tab1 from './messages';
-import Tab2 from './Documents';
-import Tab3 from './favorites';
-import {createDrawerNavigator} from 'react-navigation';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import React, {Component} from 'react'
+import {Container, Header, Tab, Tabs, View} from 'native-base'
+import Tab1 from './messages'
+import Tab2 from './Documents'
+import Tab3 from './favorites'
+import {createDrawerNavigator} from 'react-navigation'
+import {StyleSheet, Text, TouchableOpacity} from 'react-native'
 import Icon from 'react-native-ionicons'
 import Feedback from './feedback'
 import UserScreen from './user'
-import Drawers from './drawers';
 
 class App extends Component {
-  
+  onNavigate = () =>{
+    this.props.navigation.navigate('InfoScreen')
+}
   render() {
+    
     return (
       
       <Container>
@@ -25,7 +27,8 @@ class App extends Component {
           
             <Text>Psikis kasus effect</Text>
 
-            <TouchableOpacity>
+            <TouchableOpacity
+            onPress={this.onNavigate.bind(this)}>
               <Text style={styles.instructions}><Icon name="information-circle-outline" size={25} /></Text>
             </TouchableOpacity>
             

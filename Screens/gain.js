@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  Image,
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
-
+import {AppRegistry, Image, View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   white:{
@@ -39,22 +31,22 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: 'white',
     textAlign: 'center',
-
   }
 });
+
 export default class App extends Component {
   onNavigate = () =>{
     this.props.navigation.navigate('EnterScreen')
-}
+  }
+  
   render() {
 
     return (
       <View
         style={{
           flex: 1,
+        }}>
 
-        }}
-      >
         <View
           style={{
             position: 'absolute',
@@ -62,16 +54,15 @@ export default class App extends Component {
             left: 0,
             width: '100%',
             height: '100%',
-          }}
-        >
+          }}>
+
           <Image
             style={{
               flex: 1,
-             
             }}
-            source={{ uri: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?cs=srgb&dl=close-up-of-coffee-cup-on-table-312418.jpg&fm=jpg' }}
-          />
+            source={{ uri: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?cs=srgb&dl=close-up-of-coffee-cup-on-table-312418.jpg&fm=jpg' }}/>
         </View>
+
         <View style={{height: 15}}></View>
         <Text style={{fontSize:30, color:'white'}}>Gain access</Text>
           <View style={{width: 395, height: 50}}>
@@ -84,19 +75,17 @@ export default class App extends Component {
         
           <TouchableOpacity style={styles.button}onPress={this.onNavigate.bind(this)}>
           <Text style ={styles.buttonText}>Request PIN</Text>
-        </TouchableOpacity>
+          </TouchableOpacity>
         <View
           style={{
             flex: 1,
             backgroundColor: 'transparent',
             justifyContent: 'flex-end',
-          }}
-          
-        >
+          }}>
+            
           <View style={{justifyContent: 'flex-end', flex: 1, alignItems: 'center'}}>
           <Text style={styles.white}>back</Text>
-        </View>
-
+          </View>
         </View>
       </View>
     );

@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  Image,
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
-
+import {AppRegistry, Image, View, Text, TouchableOpacity, StyleSheet,} from 'react-native';
 
 const styles = StyleSheet.create({
   white:{
@@ -39,13 +31,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: 'white',
     textAlign: 'center',
-
   }
 });
+
 export default class App extends Component {
   onNavigate = () =>{
     this.props.navigation.navigate('KasusScreen')
-}
+  }
   render() {
 
     return (
@@ -62,16 +54,15 @@ export default class App extends Component {
             left: 0,
             width: '100%',
             height: '100%',
-          }}
-        >
+          }}>
+
           <Image
             style={{
               flex: 1,
-             
             }}
-            source={{ uri: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?cs=srgb&dl=close-up-of-coffee-cup-on-table-312418.jpg&fm=jpg' }}
-          />
+            source={{ uri: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?cs=srgb&dl=close-up-of-coffee-cup-on-table-312418.jpg&fm=jpg' }}/>
         </View>
+
         <View style={{height: 15}}></View>
         <Text style={{fontSize:30, color:'white', left: 5}}>Enter PIN</Text>
           <View style={{width: 395, height: 50, left: 5}}>
@@ -81,17 +72,16 @@ export default class App extends Component {
           <Text style={styles.white}></Text>
         </View> 
         
-          <TouchableOpacity style={styles.button}onPress={this.onNavigate.bind(this)}>
+        <TouchableOpacity style={styles.button}onPress={this.onNavigate.bind(this)}>
           <Text style ={styles.buttonText}>PIN</Text>
         </TouchableOpacity>
+        
         <View
           style={{
             flex: 1,
             backgroundColor: 'transparent',
             justifyContent: 'flex-end',
-          }}
-          >
-
+          }}>
         </View>
       </View>
     );

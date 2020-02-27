@@ -1,8 +1,6 @@
-import React,{Component} from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
-import { createDrawerNavigator } from 'react-navigation';
-import KasusScreen from './kasus';
-import FeedbackScreen from './feedback';
+import React,{Component} from 'react'
+import { createDrawerNavigator } from 'react-navigation'
+import KasusScreen from './kasus'
 
 const DrawerNavigator = createDrawerNavigator(
   {

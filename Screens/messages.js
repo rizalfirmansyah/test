@@ -20,7 +20,7 @@ export default class messages extends Component {
           underlineColorAndroid="transparent"
           onChangeText={this.messages}
         />
-        <Text style={styles.input}>HASIL INPUT </Text>
+        <Text style={styles.input}> </Text>
       </View>
     );
   }
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   input: {
     margin: 15,
     height: 40,
-    borderColor: '#7a42f4',
+    borderColor: 'grey',
     borderWidth: 1,
   },
   submitButton: {

@@ -1,10 +1,11 @@
-import React from 'react';
-import { createStackNavigator } from 'react-navigation'; // Version can be specified in package.json
+import React from 'react'
+import { createStackNavigator } from 'react-navigation' // Version can be specified in package.json
 import LoginScreen from './Screens/login'
 import GainScreen from './Screens/gain'
 import EnterScreen from './Screens/enter'
 import DrawerNavigator from './Screens/drawers'
 import KasusScreen from './Screens/kasus'
+import InfoScreen from './Screens/info'
 
 // class HomeScreen extends React.Component {
 //   render() {
@@ -37,6 +38,7 @@ const RootStack = createStackNavigator(
     EnterScreen: EnterScreen,
     DrawerNavigator: DrawerNavigator,
     KasusScreen: KasusScreen,
+    InfoScreen: InfoScreen,
   },
   {
     initialRouteName: 'LoginScreen',
